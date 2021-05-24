@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>
+My Family Book
+</title>
+<body>
+<h1>
+My Family Book
+</h1>
+<img 
+src=
+"https://images.unsplash.com/photo-1561525140-c2a4cc68e4bd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80">;
+<h4 id="family_members_names"></h4>
+<button onclick="update();">Next</button>;
+<script>
+var images = ["file:///C:/Users/prana/OneDrive/Pictures/5293.JPG",
+"file:///C:/Users/prana/OneDrive/Pictures/2018-12/ILWW9683.JPG",
+"file:///C:/Users/prana/OneDrive/Pictures/2857.JPG",
+"file:///C:/Users/prana/OneDrive/Pictures/3638.JPG"];
+var names = ["Aarav","Anjana","Prateek","Manya"];
+var i = 0;
+function update()
+{
+i++;
+var family_members_names = 4;
+if (i > family_members_names)
+{
+i = 0;
+}
+
+
+var updated_image = images[i];
+var updated_names = names [i];
+document.getElementById("images").src = updated_image;
+document.getElementById("names").innerHTML = updated_names;}
+</script>
+</body>
+</head>
+</html>
